@@ -16,7 +16,7 @@ Route::get('/dashboard', function () {
 
 
 Route::get('/blog', function(){
-    return view('frontend.app');
-});
+    return view('frontend.layouts.home');
+})->name('home');
 
 require __DIR__.'/auth.php';
